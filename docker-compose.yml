@@ -1,0 +1,9 @@
+version: '3'
+services:
+  app:
+    image: dorrachaouch/express-sqlite-app
+    container_name: express-sqlite-app
+    volumes:
+      - ./db:/usr/src/app/db
+    ports:
+      - "3000:3000"
